@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura Villa Mar · Café, table et rooftop sur la corniche de Nador</title>
+<meta name="description" content="Aura Villa Mar, nouvelle adresse sur la corniche de Nador : café signature, petits déjeuners, table du midi et du soir, et un rooftop avec vue sur la mer au coucher du soleil.">
+<meta name="theme-color" content="#ebe5da">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2324344f'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='34' text-anchor='middle' fill='%23f2a46b'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="lift" id="lift" aria-hidden="true">
+  <div class="lift__display"><i class="ph-light ph-caret-down lift__arrow"></i><span class="lift__num" id="liftNum">R</span></div>
+  <div class="lift__door lift__door--l"><span>Aura</span></div>
+  <div class="lift__door lift__door--r"><span>Villa Mar</span></div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">Aura Villa Mar</a>
+  <div class="nav__end">
+    <a class="nav__route" href="https://www.google.com/maps/search/?api=1&query=Aura+Villa+Mar+Nador" target="_blank" rel="noopener" data-i18n="cta.route">Itinéraire</a>
+    <div class="lang" role="group" aria-label="Langue">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</header>
+
+<nav class="panel" id="panel" aria-label="Étages">
+  <div class="panel__screen" aria-hidden="true"><i class="ph-light ph-caret-up panel__dir" id="panelDir"></i><span class="panel__win"><span class="panel__num" id="panelNum">0</span></span></div>
+  <a class="panel__btn" href="#rooftop" data-floor="R"><b>R</b><span data-i18n="fl.r">Rooftop</span></a>
+  <a class="panel__btn" href="#table" data-floor="1"><b>1</b><span data-i18n="fl.1">La table</span></a>
+  <a class="panel__btn is-on" href="#cafe" data-floor="0" aria-current="true"><b>0</b><span data-i18n="fl.0">Café</span></a>
+</nav>
+
+<main id="top">
+
+  <section class="hero" data-floor="0">
+    <svg class="palms" id="palms" viewBox="0 0 1000 800" preserveAspectRatio="xMinYMin slice" aria-hidden="true"></svg>
+    <div class="hero__copy">
+      <h1 class="hero__title">Aura<br>Villa Mar</h1>
+      <p class="hero__sub" data-i18n="hero.sub">Un café signature, une table soignée et un rooftop face à la mer, sur la corniche de Nador.</p>
+      <div class="hero__cta">
+        <a class="btn btn--dusk" href="#rooftop" data-i18n="cta.up">Monter au rooftop</a>
+        <a class="btn btn--line" href="#venir" data-i18n="cta.visit">Nous trouver</a>
+      </div>
+    </div>
+    <figure class="hero__glass">
+      <img src="assets/img/rooftop-sunset.jpg" alt="La villa blanche au coucher du soleil, rooftop plein" width="904" height="1600">
+    </figure>
+  </section>
+
+  <section class="floor floor--cafe" id="cafe" data-floor="0">
+    <div class="plaque" aria-hidden="true"><b>0</b><span data-i18n="fl.0">Café</span></div>
+    <div class="cafe__grid">
+      <div class="cafe__txt">
+        <h2 class="h2" data-i18n="cafe.title">Du café aux plats gourmands</h2>
+        <p data-i18n="cafe.p">Le fil de la journée : un café signature, un petit déjeuner catalan ou des pancakes, puis des jus et des milkshakes en terrasse.</p>
+        <ul class="menu">
+          <li data-i18n="cafe.1">Café signature</li>
+          <li data-i18n="cafe.2">Petit déjeuner catalan</li>
+          <li data-i18n="cafe.3">Pancakes</li>
+          <li data-i18n="cafe.4">Milkshakes et jus</li>
+        </ul>
+      </div>
+      <figure class="shot shot--a"><img src="assets/img/cafe.jpg" alt="Tasse de café sur une nappe bleue en terrasse" loading="lazy" width="901" height="1600"></figure>
+      <figure class="shot shot--b"><img src="assets/img/petit-dej.jpg" alt="Assiette de petit déjeuner : œufs, jambon, salade et fruits" loading="lazy" width="1600" height="1245"></figure>
+      <figure class="shot shot--c"><img src="assets/img/jus.jpg" alt="Trois jus et cocktails sans alcool servis au comptoir" loading="lazy" width="901" height="1600"></figure>
+    </div>
+  </section>
+
+  <section class="floor floor--table" id="table" data-floor="1">
+    <div class="plaque plaque--dark" aria-hidden="true"><b>1</b><span data-i18n="fl.1">La table</span></div>
+    <div class="table__head">
+      <h2 class="h2" data-i18n="table.title">La finesse en toute simplicité</h2>
+      <p data-i18n="table.p">Salades généreuses, pâtes crémeuses, tacos et burgers, présentés avec soin.</p>
+    </div>
+    <div class="dishes">
+      <figure class="dish"><img src="assets/img/salade.jpg" alt="Salade au poulet croustillant, copeaux de parmesan et tuile au sésame" loading="lazy" width="1200" height="1600"><figcaption data-i18n="d1">Salade, poulet croustillant, parmesan</figcaption></figure>
+      <figure class="dish"><img src="assets/img/pates.jpg" alt="Pâtes à la sauce crémeuse et légumes sur assiette verte" loading="lazy" width="900" height="1600"><figcaption data-i18n="d2">Pâtes, sauce crémeuse</figcaption></figure>
+      <figure class="dish"><img src="assets/img/burger.jpg" alt="Burger au poulet pané avec frites et sauce" loading="lazy" width="900" height="1600"><figcaption data-i18n="d3">Burger croustillant et frites</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="floor floor--roof" id="rooftop" data-floor="R">
+    <div class="sky" id="sky" aria-hidden="true"></div>
+    <div class="plaque plaque--light" aria-hidden="true"><b>R</b><span data-i18n="fl.r">Rooftop</span></div>
+    <div class="roof__head">
+      <h2 class="h2" data-i18n="roof.title">Le dernier étage, pour ceux qui s’attardent</h2>
+      <p data-i18n="roof.p">La terrasse et le rooftop regardent la corniche, les palmiers et la mer. Le soir, le ciel passe à l’abricot, puis au bleu.</p>
+    </div>
+    <div class="roof__views">
+      <figure class="view view--a"><img src="assets/img/terrasse-mer.jpg" alt="Vue depuis la terrasse sur la corniche, les palmiers et la mer" loading="lazy" width="1200" height="1600"></figure>
+      <figure class="view view--b"><img src="assets/img/palmiers-mer.jpg" alt="Palmiers et mer au crépuscule depuis la villa" loading="lazy" width="1200" height="1600"></figure>
+    </div>
+    <div class="sweet">
+      <figure class="sweet__fig"><img src="assets/img/desserts.jpg" alt="Dessert à la crème pistache, cigare au chocolat et kunafa" loading="lazy" width="518" height="640"></figure>
+      <div class="sweet__txt">
+        <h3 class="h3" data-i18n="sweet.title">Pour finir là-haut</h3>
+        <ul class="menu menu--light">
+          <li data-i18n="sweet.1">Crème pistache</li>
+          <li data-i18n="sweet.2">Cigare au chocolat</li>
+          <li>Kunafa</li>
+          <li data-i18n="sweet.4">Cocktails sans alcool</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="words" aria-labelledby="wordsT">
+    <h2 class="h2" id="wordsT" data-i18n="w.title">Ils en parlent</h2>
+    <div class="words__list" id="reviews"></div>
+    <p class="words__note" data-i18n="w.note">Avis Google, traduits.</p>
+  </section>
+
+  <section class="visit" id="venir">
+    <figure class="visit__fig"><img src="assets/img/villa.jpg" alt="La villa blanche à trois niveaux sur la corniche" loading="lazy" width="1201" height="1600"></figure>
+    <div class="visit__txt">
+      <h2 class="h2" data-i18n="v.title">Sur la corniche de Nador</h2>
+      <dl>
+        <div><dt data-i18n="v.h">Horaires</dt><dd data-i18n="v.h.v">Annoncés sur Instagram</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/auravilla.mar/" target="_blank" rel="noopener">@auravilla.mar</a></dd></div>
+        <div><dt>TikTok</dt><dd><a href="https://www.tiktok.com/@auravilla.mar" target="_blank" rel="noopener">@auravilla.mar</a></dd></div>
+      </dl>
+      <div class="visit__cta">
+        <a class="btn btn--dusk" href="https://www.google.com/maps/search/?api=1&query=Aura+Villa+Mar+Nador" target="_blank" rel="noopener" data-i18n="cta.route">Itinéraire</a>
+        <a class="btn btn--line" href="https://www.instagram.com/auravilla.mar/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot"><p class="foot__name">Aura Villa Mar</p><p data-i18n="foot.p">Café · Table · Rooftop · Corniche de Nador</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
